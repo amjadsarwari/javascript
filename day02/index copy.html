@@ -13,20 +13,22 @@
       In this case JavaScript changes the value of the src (source) attribute of
       an image.
     </p>
-    <button onclick="handleOnButtonClick()">ON</button>
+    <button onclick=handelonclick()>ON</button>
     <p id="paraid"></p>
-    <img id="myimg" src="./image/off.webp" width="200" height="200" />
-    <button onclick=" handleOffButtonClick()" width="200" height="200">OFF</button>
+    <img id="imgid" src="./image/on.webp" alt="Bulb is on" height="200" width="200">
+    <button onclick="handeloffclick()">OFF</button>
     <script>
-      function handleOnButtonClick() {
-        document.getElementById("myimg").src = "image/on.webp";
-        document.getElementById("paraid").innerHTML = "The Bulb Is On";
-      }
+      function handelonclick() {
+        //blocck of code
+        document.getElementById("imgid").src="./image/on.webp";
+        document.getElementById("paraid").innerHTML="The Bulb IS ON Now "
 
-      function handleOffButtonClick() {
-        document.getElementById('myimg').src='image/off.webp'
-        document.getElementById("paraid").innerHTML = "The Bulb Is OFF Now";
+      }
+      function handeloffclick() {
+        document.getElementById("imgid").src="./image/off.webp";
+        document.getElementById("paraid").innerHTML="The Bulb Is OFF Now"
       }
     </script>
+
   </body>
 </html>

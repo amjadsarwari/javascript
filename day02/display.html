@@ -12,11 +12,24 @@
 
     <p id="demo"></p>
     <p class="democlass"></p>
-
+    <button onclick="document.write('New Name')">Try Now</button>
+    <!--Data Display Via InnerHTML-->
     <script>
       document.getElementById("demo").innerHTML = 5 + 6;
       document.querySelector(".democlass").innerHTML =
         "this is via query selector function with class name";
+    </script>
+    <!--Data Display Via Document Write Method-->
+    <script>
+      // document.write("This Text Is From Write")
+    </script>
+    <!--Data Display Via Window Alert Function-->
+    <script>
+      window.alert("Please Confrim Your Information")
+    </script>
+    <!--Data Display In THe Console This Is Mostly Used For Code Debbuging-->
+    <script>
+      console.log("This IS My First Console Log", document)
     </script>
   </body>
 </html>
